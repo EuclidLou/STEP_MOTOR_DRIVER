@@ -14,3 +14,9 @@ A driver for 42cm step motor, using esp32-c3fh4 as mcu
 ## 软件部分
 软件基于Espressif官方的IDF插件编写，调用官方API以使用外设。<br />
 FreeRTOS下开启了3个线程，在menuconfig中设定tick频率为1000 <br />
+
+## 更新记录
+| 版本 | 功能 |
+| V1.0 | 用蓝牙spp进行控制 |
+| V2.0 | 优化了esp32c3的IO |
+| V3.0 | 取消了无线控制，改为使用CAN总线 |
