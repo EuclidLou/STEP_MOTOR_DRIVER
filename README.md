@@ -1,5 +1,5 @@
-# step-motor-driver
-A driver for 42cm step motor, using esp32-c3fh4 as mcu
+# Step-Motor-Driver
+A driver for 42mm step motor, using esp32-c3fh4 as mcu
 
 ## 这是一个闭环的步进电机驱动器
 
