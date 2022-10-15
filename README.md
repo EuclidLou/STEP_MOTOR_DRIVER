@@ -2,8 +2,11 @@
 A driver for 42mm step motor, using esp32-c3fh4 as mcu
 
 ## 这是一个闭环的步进电机驱动器
+![](/IMG/1.jpg)
+
 
 ## 板上资源
+![](/IMG/2.jpg)
 使用esp32-c3作为主控，可以实现蓝牙spp模拟串口进行控制。<br />
 驱动部分用的是一体化集成的DRV8824，最大电流1.6A，可以更换为DRV8825，或者叠焊多枚8824以实现更大的驱动电流。<br />
 角度细分可以达到最大1/32步长。支持3种衰减模式，用于在不同转速情况下减小噪声和抖动。<br />
@@ -13,7 +16,8 @@ A driver for 42mm step motor, using esp32-c3fh4 as mcu
 
 ## 软件部分
 软件基于Espressif官方的IDF插件编写，调用官方API以使用外设。<br />
-FreeRTOS下开启了3个线程，在menuconfig中设定tick频率为1000 <br />
+FreeRTOS下开启了3个线程，tick频率为1000Hz <br />
+
 
 ## 更新记录
 | 版本 | 功能 |
